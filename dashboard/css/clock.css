@@ -1,0 +1,9 @@
+#canvas {
+    background-color: fdf9f3;
+}
+@media screen and (min-width: 768px){
+    canvas{
+        width: 300px;
+        height: 300px;
+    }
+}

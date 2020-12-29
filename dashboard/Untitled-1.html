@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <!-- ===== Links ===== -->
+          <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+          <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous"
+        />
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,500'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.eot'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.svg'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.ttf'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff2'><link rel="stylesheet" href="./style.css">
+        <!-- ===== End of inks ===== -->
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/card.css">
+        <link rel="stylesheet" href="css/weather.css">
+        <link rel="stylesheet" href="css/clock.css">
+        <!-- ===== END OF CSS ===== -->
+        <title>STRC</title>
+    </head>
+    <body onload="initClock()">
+        <!-- === Template starts here =====-->
+    <section id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <img src="../img/hey.svg" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <i class='bx bx-buildings nav__logo-icon'></i>
+                        <span class="nav__logo-name">STRC</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="#" class="nav__link active">
+                        <i class='bx bx-grid-alt nav__icon' ></i>
+                            <span class="nav__name">Dashboard</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-user nav__icon' ></i>
+                            <span class="nav__name">Profile</span>
+                        </a>
+                        
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-wrench nav__icon'></i>
+                            <span class="nav__name">Settigs</span>
+                        </a>
+
+                        <a href="#updates" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <span class="nav__name">Updates</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--===== SIDEBAR JS =====-->
+        <script src="js/sidebar.js"></script>
+        <!--===== END OF SIDEBAR JS =====-->
+    </section>
+    <!-- === Template Ends here =====-->
+    <!-- === Top Card Starts here=====-->
+    <section class="dashboard">
+        <div class="main__container">
+            <!-- MAIN TITLE STARTS HERE -->
+    
+            <div class="main__title">
+              <img src="../img/hey.svg" alt="" />
+              <div class="main__greeting">
+                <h1>Hello Admin</h1>
+                <p>Welcome to your admin dashboard</p>
+              </div>
+            </div>
+    
+            <!-- MAIN TITLE ENDS HERE -->
+    
+            <!-- MAIN CARDS STARTS HERE -->
+            <div class="card_main">
+            <div class="main__cards">
+              <div class="card">
+                <i
+                  class="fa fa-bell-o fa-2x text-lightblue"
+                  aria-hidden="true"
+                ></i>
+                <div class="card_inner">
+                  <p class="text-primary-p">STRC Updates</p>
+                  <span class="font-bold text-title">+3</span>
+                </div>
+              </div>
+    
+              <div class="card">
+                <i class="fa fa-calendar fa-2x text-red" aria-hidden="true"></i>
+                <div class="card_inner">
+                  <p class="text-primary-p">Calendar</p>
+                  <span class="font-bold text-title">+2</span>
+                </div>
+              </div>
+    
+              <div class="card">
+                <i
+                  class="fa fa-video-camera fa-2x text-yellow"
+                  aria-hidden="true"
+                ></i>
+                <div class="card_inner">
+                  <p class="text-primary-p">Discord</p>
+                  <a href="https://discord.com/channels/744908953938296959/764129791405457409">
+                  <span class="font-bold text-title">Join</span> </a>
+                </div>
+              </div>
+    
+              <div class="card">
+                <i
+                class="fa fa-id-card fa-2x text-green"
+                aria-hidden="true"
+                ></i>
+                <div class="card_inner">
+                  <p class="text-primary-p">ID</p>
+                  <a href="#">
+                  <span class="font-bold text-title">View</span> </a>
+                </div>
+              </div>
+              </div>
+            </div>
+            <!-- MAIN CARDS ENDS HERE -->
+            <!-- === Top cards Ends here =====-->
+            <section class="dashboard_bottom">
+              <!-- Weather -->
+              <div class="weather">
+              <div class="se-pre-con"></div>
+              <main class="wrapper">
+                <header>
+                  <nav class="unit-toggle">
+                    <button id="unit_cel" disabled>C</button>
+                    <span class="divider"> / </span>
+                    <button id="unit_fah">F</button>
+                  </nav>
+                  <!--end nav unit-toggle-->
+                </header>
+              
+                <div class="forecast">
+                  <!--<p class="forecast_city">Vancouver, BC</p>-->
+                  <!--<p class="forecast_country">Canada</p>-->
+                  <p class="forecast_city"></p>
+                  <p class="forecast_country"></p>
+              
+                  <!--<p class="forecast_icon wi wi-day-sunny"></p>-->
+                  <p class="forecast_icon"></p>
+              
+                  <!--<p class="forecast_summary">Clear Skies</p>-->
+                  <p class="forecast_summary"></p>
+              
+                  <div class="forecast_cont">
+                    <p class="forecast_high">
+                      <span class="wi wi-direction-up"></span>
+                      <span class="high_temp"><!--30&deg;--></span>
+              
+                    </p>
+              
+                    <p class="forecast_low">
+                      <span class="wi wi-direction-down"></span>
+                      <span class="low_temp"><!--26&deg;--></span>
+                    </p>
+              
+                    <p class="forecast_temp">
+                      <!--29&deg;-->
+                    </p>
+                  </div>
+                </div>
+                <!--end (daily) forecast div-->
+              
+                <!--WEEKLY FORECAST-->
+                <div class="weekly">
+                  <ul class="weekly_list" id="weekly_list">
+                  </ul>
+                </div>
+                <!--end weekly forecast here-->
+            </div>
+        <!-- Weather Js -->
+        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js'></script>
+        <script  src="js/title.js"></script>
+         <!-- Weather Ends here -->
+        
+        </section>
+</body>
+</html>
